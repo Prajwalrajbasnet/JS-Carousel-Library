@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.carousel-container{
+  margin: auto;
+  float: left;
+  margin: 15px;
+}
+#text-carousel{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: blueviolet;
+  color: white;
+}
+.text-item{
+  height: 200px;
+  max-width: 600px;
+  text-align: center;
+  padding:  15px 80px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/carousel.css" rel="stylesheet" type="text/css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Image Slider</title>
+</head>
+<body>
+  <div class="carousel-container" id="carousel">
+    <img src="images/img1.jpg" alt="img1" class="carousel-item"/>
+    <img src="images/img2.jpg" alt="img2" class="carousel-item"/>
+    <img src="images/img3.jpg" alt="img3" class="carousel-item"/>
+    <img src="images/img4.jpg" alt="img4" class="carousel-item"/>
+    <img src="images/img5.jpg" alt="img5" class="carousel-item"/>
+    <img src="images/img6.jpg" alt="img5" class="carousel-item"/>
+    <img src="images/img7.jpg" alt="img6" class="carousel-item"/>
+  </div>
+
+  <div class="carousel-container" id="carousel2">
+    <img src="images/img1.jpg" alt="img1" class="carousel-item"/>
+    <img src="images/img2.jpg" alt="img2" class="carousel-item"/>
+  </div>
+
+  <div class="carousel-container" id="carousel3">
+    <img src="images/img1.jpg" alt="img1" class="carousel-item"/>
+    <img src="images/img2.jpg" alt="img2" class="carousel-item"/>
+    <img src="images/img3.jpg" alt="img3" class="carousel-item"/>
+    <img src="images/img4.jpg" alt="img4" class="carousel-item"/>
+    <img src="images/img5.jpg" alt="img5" class="carousel-item"/>
+    <img src="images/img6.jpg" alt="img5" class="carousel-item"/>
+  </div>
+  <div class="carousel-container" id="carousel4">
+    <img src="images/img1.jpg" alt="img1" class="carousel-item"/>
+    <img src="images/img2.jpg" alt="img2" class="carousel-item"/>
+    <img src="images/img3.jpg" alt="img3" class="carousel-item"/>
+    <img src="images/img4.jpg" alt="img4" class="carousel-item"/>
+  </div>
+
+  <div class="carousel-container" id="carousel5">
+    <img src="images/img1.jpg" alt="img1" class="carousel-item"/>
+    <img src="images/img2.jpg" alt="img2" class="carousel-item"/>
+    <img src="images/img3.jpg" alt="img3" class="carousel-item"/>
+    <img src="images/img4.jpg" alt="img4" class="carousel-item"/>
+  </div>
+
+  <div class="carousel-container" id="text-carousel">
+    <div class="carousel-item text-item">
+        <h1>Hello World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tempora vel ipsa, officiis veritatis architecto impedit quod ullam non! Aliquid debitis ducimus consectetur exercitationem minus sunt ad tenetur, quia aperiam!</p>
+    </div>
+    <div class="carousel-item text-item">
+      <h1>Hello World</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tempora vel ipsa, officiis veritatis architecto impedit quod ullam non! Aliquid debitis ducimus consectetur exercitationem minus sunt ad tenetur, quia aperiam!</p>
+    </div>
+    <div class="carousel-item text-item">
+      <h1>Div Carousel</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tempora vel ipsa, officiis veritatis architecto impedit quod ullam non! Aliquid debitis ducimus consectetur exercitationem minus sunt ad tenetur, quia aperiam!</p>
+    </div>
+  </div>
+
+  <div class="carousel-container" id="carousel6">
+    <img src="images/landscape.jpg" alt="landscape image" class="carousel-item"/>
+    <img src="images/landscape2.jpg" alt="landscape image" class="carousel-item"/>
+    <img src="images/landscape3.jpg" alt="landscape image" class="carousel-item"/>
+    <img src="images/landscape4.jpg" alt="landscape image" class="carousel-item"/>
+  </div>
+
+  <script src="js/carousel.js"></script>
+  <script>
+    var imgSlider = new Carousel('carousel',800);
+    imgSlider.startSlideshow(3500);
+
+    var imgSlider2 = new Carousel('carousel2',600);
+    imgSlider2.startSlideshow(4000);
+
+    var imgSlider3 = new Carousel('carousel3',200);
+    imgSlider3.startSlideshow(3000);
+
+    var imgSlider4 = new Carousel('carousel4',2000);
+    imgSlider4.startSlideshow(8000);
+
+    var imgSlider5 = new Carousel('carousel5',100);
+
+    var imgSlider6 = new Carousel('carousel6',400);
+    imgSlider6.startSlideshow(1200);
+
+    var divSlider = new Carousel('text-carousel');
+  </script>
+</body>
+</html>
